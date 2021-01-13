@@ -17,7 +17,7 @@ for line in filename:  # changed f to filename
     # changed |'s to commas because that's an actual standard. 
     entry = line.split(',') # split by comma delimiter. changes "entries" to entry because it makes more sense
     
-    if len(entry) != len(column_type): #added check on data to make sure items in list are 3
+    if len(entry) != len(column_set): #added check on data to make sure items in list are 3
         continue #continue this if items != 3
     salesperson = entry[name]
     price = float(entry[total_price]) # added in price because it was omitted
